@@ -1,1 +1,527 @@
-[]
+[
+  {
+    "registration_month": "2024-01",
+    "vehicle_category": "EV",
+    "total_registrations": 1403
+  },
+  {
+    "registration_month": "2024-01",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2101
+  },
+  {
+    "registration_month": "2024-01",
+    "vehicle_category": "ICE",
+    "total_registrations": 66678
+  },
+  {
+    "registration_month": "2024-01",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2024-02",
+    "vehicle_category": "EV",
+    "total_registrations": 1026
+  },
+  {
+    "registration_month": "2024-02",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1830
+  },
+  {
+    "registration_month": "2024-02",
+    "vehicle_category": "ICE",
+    "total_registrations": 64078
+  },
+  {
+    "registration_month": "2024-03",
+    "vehicle_category": "EV",
+    "total_registrations": 2260
+  },
+  {
+    "registration_month": "2024-03",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2261
+  },
+  {
+    "registration_month": "2024-03",
+    "vehicle_category": "ICE",
+    "total_registrations": 70542
+  },
+  {
+    "registration_month": "2024-04",
+    "vehicle_category": "EV",
+    "total_registrations": 1609
+  },
+  {
+    "registration_month": "2024-04",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1761
+  },
+  {
+    "registration_month": "2024-04",
+    "vehicle_category": "ICE",
+    "total_registrations": 60152
+  },
+  {
+    "registration_month": "2024-05",
+    "vehicle_category": "EV",
+    "total_registrations": 2453
+  },
+  {
+    "registration_month": "2024-05",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1870
+  },
+  {
+    "registration_month": "2024-05",
+    "vehicle_category": "ICE",
+    "total_registrations": 69576
+  },
+  {
+    "registration_month": "2024-05",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2024-06",
+    "vehicle_category": "EV",
+    "total_registrations": 1912
+  },
+  {
+    "registration_month": "2024-06",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1899
+  },
+  {
+    "registration_month": "2024-06",
+    "vehicle_category": "ICE",
+    "total_registrations": 57391
+  },
+  {
+    "registration_month": "2024-07",
+    "vehicle_category": "EV",
+    "total_registrations": 1884
+  },
+  {
+    "registration_month": "2024-07",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2119
+  },
+  {
+    "registration_month": "2024-07",
+    "vehicle_category": "ICE",
+    "total_registrations": 73020
+  },
+  {
+    "registration_month": "2024-07",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2024-08",
+    "vehicle_category": "EV",
+    "total_registrations": 1774
+  },
+  {
+    "registration_month": "2024-08",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1924
+  },
+  {
+    "registration_month": "2024-08",
+    "vehicle_category": "ICE",
+    "total_registrations": 72366
+  },
+  {
+    "registration_month": "2024-09",
+    "vehicle_category": "EV",
+    "total_registrations": 1513
+  },
+  {
+    "registration_month": "2024-09",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1688
+  },
+  {
+    "registration_month": "2024-09",
+    "vehicle_category": "ICE",
+    "total_registrations": 57870
+  },
+  {
+    "registration_month": "2024-10",
+    "vehicle_category": "EV",
+    "total_registrations": 1569
+  },
+  {
+    "registration_month": "2024-10",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1804
+  },
+  {
+    "registration_month": "2024-10",
+    "vehicle_category": "ICE",
+    "total_registrations": 71664
+  },
+  {
+    "registration_month": "2024-11",
+    "vehicle_category": "EV",
+    "total_registrations": 1804
+  },
+  {
+    "registration_month": "2024-11",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 1863
+  },
+  {
+    "registration_month": "2024-11",
+    "vehicle_category": "ICE",
+    "total_registrations": 68145
+  },
+  {
+    "registration_month": "2024-12",
+    "vehicle_category": "EV",
+    "total_registrations": 2581
+  },
+  {
+    "registration_month": "2024-12",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 3406
+  },
+  {
+    "registration_month": "2024-12",
+    "vehicle_category": "ICE",
+    "total_registrations": 78438
+  },
+  {
+    "registration_month": "2025-01",
+    "vehicle_category": "EV",
+    "total_registrations": 1691
+  },
+  {
+    "registration_month": "2025-01",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2249
+  },
+  {
+    "registration_month": "2025-01",
+    "vehicle_category": "ICE",
+    "total_registrations": 49986
+  },
+  {
+    "registration_month": "2025-02",
+    "vehicle_category": "EV",
+    "total_registrations": 2160
+  },
+  {
+    "registration_month": "2025-02",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2112
+  },
+  {
+    "registration_month": "2025-02",
+    "vehicle_category": "ICE",
+    "total_registrations": 63048
+  },
+  {
+    "registration_month": "2025-03",
+    "vehicle_category": "EV",
+    "total_registrations": 2976
+  },
+  {
+    "registration_month": "2025-03",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2772
+  },
+  {
+    "registration_month": "2025-03",
+    "vehicle_category": "ICE",
+    "total_registrations": 71355
+  },
+  {
+    "registration_month": "2025-04",
+    "vehicle_category": "EV",
+    "total_registrations": 2892
+  },
+  {
+    "registration_month": "2025-04",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2269
+  },
+  {
+    "registration_month": "2025-04",
+    "vehicle_category": "ICE",
+    "total_registrations": 60029
+  },
+  {
+    "registration_month": "2025-05",
+    "vehicle_category": "EV",
+    "total_registrations": 4152
+  },
+  {
+    "registration_month": "2025-05",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2695
+  },
+  {
+    "registration_month": "2025-05",
+    "vehicle_category": "ICE",
+    "total_registrations": 67534
+  },
+  {
+    "registration_month": "2025-06",
+    "vehicle_category": "EV",
+    "total_registrations": 3272
+  },
+  {
+    "registration_month": "2025-06",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2070
+  },
+  {
+    "registration_month": "2025-06",
+    "vehicle_category": "ICE",
+    "total_registrations": 53497
+  },
+  {
+    "registration_month": "2025-06",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2025-07",
+    "vehicle_category": "EV",
+    "total_registrations": 2792
+  },
+  {
+    "registration_month": "2025-07",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2476
+  },
+  {
+    "registration_month": "2025-07",
+    "vehicle_category": "ICE",
+    "total_registrations": 70366
+  },
+  {
+    "registration_month": "2025-07",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2025-08",
+    "vehicle_category": "EV",
+    "total_registrations": 3461
+  },
+  {
+    "registration_month": "2025-08",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2902
+  },
+  {
+    "registration_month": "2025-08",
+    "vehicle_category": "ICE",
+    "total_registrations": 72606
+  },
+  {
+    "registration_month": "2025-08",
+    "vehicle_category": "Other",
+    "total_registrations": 1
+  },
+  {
+    "registration_month": "2025-09",
+    "vehicle_category": "EV",
+    "total_registrations": 3532
+  },
+  {
+    "registration_month": "2025-09",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2399
+  },
+  {
+    "registration_month": "2025-09",
+    "vehicle_category": "ICE",
+    "total_registrations": 56656
+  },
+  {
+    "registration_month": "2025-10",
+    "vehicle_category": "EV",
+    "total_registrations": 4345
+  },
+  {
+    "registration_month": "2025-10",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2804
+  },
+  {
+    "registration_month": "2025-10",
+    "vehicle_category": "ICE",
+    "total_registrations": 74255
+  },
+  {
+    "registration_month": "2025-11",
+    "vehicle_category": "EV",
+    "total_registrations": 5417
+  },
+  {
+    "registration_month": "2025-11",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2550
+  },
+  {
+    "registration_month": "2025-11",
+    "vehicle_category": "ICE",
+    "total_registrations": 69898
+  },
+  {
+    "registration_month": "2025-12",
+    "vehicle_category": "EV",
+    "total_registrations": 8123
+  },
+  {
+    "registration_month": "2025-12",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 3892
+  },
+  {
+    "registration_month": "2025-12",
+    "vehicle_category": "ICE",
+    "total_registrations": 84952
+  },
+  {
+    "registration_month": "2026-01",
+    "vehicle_category": "EV",
+    "total_registrations": 6239
+  },
+  {
+    "registration_month": "2026-01",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2155
+  },
+  {
+    "registration_month": "2026-01",
+    "vehicle_category": "ICE",
+    "total_registrations": 59595
+  },
+  {
+    "registration_month": "2026-02",
+    "vehicle_category": "EV",
+    "total_registrations": 3635
+  },
+  {
+    "registration_month": "2026-02",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 2208
+  },
+  {
+    "registration_month": "2026-02",
+    "vehicle_category": "ICE",
+    "total_registrations": 50840
+  },
+  {
+    "registration_month": "2026-03",
+    "vehicle_category": "EV",
+    "total_registrations": 4717
+  },
+  {
+    "registration_month": "2026-03",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 4093
+  },
+  {
+    "registration_month": "2026-03",
+    "vehicle_category": "ICE",
+    "total_registrations": 59013
+  },
+  {
+    "registration_month": "2026-04",
+    "vehicle_category": "EV",
+    "total_registrations": 5894
+  },
+  {
+    "registration_month": "2026-04",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 4942
+  },
+  {
+    "registration_month": "2026-04",
+    "vehicle_category": "ICE",
+    "total_registrations": 66983
+  },
+  {
+    "registration_month": "2026-05",
+    "vehicle_category": "EV",
+    "total_registrations": 5038
+  },
+  {
+    "registration_month": "2026-05",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 5103
+  },
+  {
+    "registration_month": "2026-05",
+    "vehicle_category": "ICE",
+    "total_registrations": 55912
+  },
+  {
+    "registration_month": "2026-06",
+    "vehicle_category": "EV",
+    "total_registrations": 6215
+  },
+  {
+    "registration_month": "2026-06",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 5646
+  },
+  {
+    "registration_month": "2026-06",
+    "vehicle_category": "ICE",
+    "total_registrations": 61082
+  },
+  {
+    "registration_month": "2026-07",
+    "vehicle_category": "EV",
+    "total_registrations": 6937
+  },
+  {
+    "registration_month": "2026-07",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 5622
+  },
+  {
+    "registration_month": "2026-07",
+    "vehicle_category": "ICE",
+    "total_registrations": 67471
+  },
+  {
+    "registration_month": "2026-08",
+    "vehicle_category": "EV",
+    "total_registrations": 8833
+  },
+  {
+    "registration_month": "2026-08",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 4964
+  },
+  {
+    "registration_month": "2026-08",
+    "vehicle_category": "ICE",
+    "total_registrations": 63479
+  },
+  {
+    "registration_month": "2026-09",
+    "vehicle_category": "EV",
+    "total_registrations": 6029
+  },
+  {
+    "registration_month": "2026-09",
+    "vehicle_category": "Hybrid",
+    "total_registrations": 5448
+  },
+  {
+    "registration_month": "2026-09",
+    "vehicle_category": "ICE",
+    "total_registrations": 62782
+  }
+]
