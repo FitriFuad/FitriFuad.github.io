@@ -43,3 +43,197 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
 .analytics-preview{display:flex;flex-direction:column;min-width:0}.analytics-preview .art-top{flex:0 0 auto}.dashboard-loading,.dashboard-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;color:var(--panel-muted)}.dashboard-loading{font:10px var(--mono);letter-spacing:.08em}.dashboard-empty[hidden],.dashboard-content[hidden]{display:none}.dashboard-empty strong{font:500 11px var(--mono);letter-spacing:.12em;color:var(--lime)}.dashboard-empty p{max-width:260px;margin:13px 0;color:var(--panel-muted);font-size:12px;line-height:1.6}.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:24px 0 21px}.kpi-card{min-width:0;padding:11px 10px 10px;border:1px solid var(--panel-rule);background:var(--file-background)}.kpi-label{display:block;overflow:hidden;color:var(--panel-label);font-size:8px;letter-spacing:.06em;text-overflow:ellipsis;white-space:nowrap}.kpi-card strong{display:block;margin-top:7px;color:var(--mint);font-size:clamp(17px,2vw,25px);letter-spacing:-.06em;line-height:1.05}.trend-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:9px}.trend-heading strong,.trend-heading span{display:block}.trend-heading strong{color:var(--mint);font-size:11px;font-weight:600}.trend-heading>div:first-child span{margin-top:3px;color:var(--art-muted);font:8px var(--mono);letter-spacing:.03em}.trend-legend{display:flex;flex:0 0 auto;gap:11px;color:var(--art-muted);font:8px var(--mono)}.trend-legend span{display:flex;align-items:center;gap:4px}.trend-legend i{display:block;width:7px;height:7px;border-radius:50%}.legend-ev{background:var(--lime)}.legend-ice{background:var(--teal)}.chart-wrap{position:relative;height:204px;min-height:0}.chart-note{margin:7px 0 0;color:var(--art-muted);font:8px var(--mono);line-height:1.4}.dashboard-footer{display:flex;flex-wrap:wrap;align-items:center;gap:7px 14px;margin-top:auto;padding-top:12px;border-top:1px solid var(--panel-divider);color:var(--panel-footer);font:8px var(--mono);letter-spacing:.04em}.dashboard-footer a{margin-left:auto;color:var(--lime);text-decoration:none}.dashboard-footer a:hover{text-decoration:underline}.dashboard-footer a:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
 @media(max-width:800px){.analytics-preview{min-height:430px}.kpi-grid{margin-top:18px}.chart-wrap{height:190px}.dashboard-footer a{margin-left:0}}
 @media(max-width:480px){.analytics-preview{padding:20px 18px;min-height:450px}.kpi-grid{gap:5px}.kpi-card{padding:9px 7px}.kpi-label{font-size:7px}.kpi-card strong{font-size:16px}.trend-heading{align-items:start;flex-direction:column;gap:7px}.chart-wrap{height:185px}.dashboard-footer{font-size:7px}.dashboard-footer a{width:100%}}
+
+
+/* =========================================
+   Custom cursor trail
+   ========================================= */
+
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--trail-size, 6px);
+  height: var(--trail-size, 6px);
+  border-radius: 50%;
+  background: currentColor;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: var(--trail-opacity, 0.4);
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+  transition: opacity 180ms ease;
+}
+
+.cursor-trail.is-hidden {
+  opacity: 0;
+}
+
+.cursor-trail.cursor-main {
+  width: 9px;
+  height: 9px;
+  opacity: 0.75;
+}
+
+/* Only enable on devices with a precise pointer */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: auto;
+  }
+
+  a,
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .cursor-trail {
+    display: none !important;
+  }
+}
+
+/* ==========================
+   MOFF PERSONAL BRAND
+========================== */
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 250ms ease;
+}
+
+/* Logo container */
+.brand-mark {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+    background: linear-gradient(
+        145deg,
+        #153b3d,
+        #0b2529
+    );
+
+    border: 1px solid rgba(182, 230, 107, 0.2);
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    overflow: hidden;
+}
+
+/* Subtle glow */
+.brand-mark::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(182, 230, 107, 0.12);
+    filter: blur(12px);
+}
+
+/* M monogram */
+.brand-letter {
+    position: relative;
+    z-index: 1;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #B6E66B;
+    font-family: inherit;
+}
+
+/* Small accent dot */
+.brand-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background: #B6E66B;
+    box-shadow: 0 0 8px rgba(182, 230, 107, 0.7);
+}
+
+/* Brand typography */
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.brand-title {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+.brand-period {
+    color: #B6E66B;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    color: var(--text-secondary);
+}
+
+/* Hover interaction */
+.brand:hover {
+    transform: translateY(-2px);
+}
+
+.brand:hover .brand-mark {
+    border-color: rgba(182, 230, 107, 0.55);
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.22),
+        0 0 14px rgba(182, 230, 107, 0.12);
+}
+
+.brand:hover .brand-letter {
+    text-shadow: 0 0 12px rgba(182, 230, 107, 0.5);
+}
+
+.brand-mark,
+.brand-letter {
+    transition: all 250ms ease;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .brand {
+        gap: 9px;
+    }
+
+    .brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .brand-letter {
+        font-size: 21px;
+    }
+
+    .brand-title {
+        font-size: 15px;
+    }
+
+    .brand-subtitle {
+        font-size: 10px;
+    }
+}

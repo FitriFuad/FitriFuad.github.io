@@ -134,3 +134,117 @@ if (dashboard) {
     .then((rows) => { if (!Array.isArray(rows)) throw new Error('Expected an array'); renderRegistrationDashboard(rows); })
     .catch(() => showDashboardEmptyState());
 }
+
+
+/* =========================================
+   Custom cursor trail animation
+   ========================================= */
+
+(() => {
+  // Disable on touch devices and reduced-motion settings.
+  const finePointer = window.matchMedia(
+    '(hover: hover) and (pointer: fine)'
+  );
+
+  const reducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  );
+
+  if (!finePointer.matches || reducedMotion.matches) return;
+
+  const trailCount = 7;
+  const trailElements = [];
+  const positions = [];
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let visible = false;
+
+  // Create the trail elements dynamically.
+  for (let i = 0; i < trailCount; i++) {
+    const dot = document.createElement('div');
+
+    dot.className = 'cursor-trail';
+
+    if (i === 0) {
+      dot.classList.add('cursor-main');
+    }
+
+    dot.setAttribute('aria-hidden', 'true');
+
+    const progress = i / (trailCount - 1);
+
+    dot.style.setProperty(
+      '--trail-size',
+      `${9 - progress * 4}px`
+    );
+
+    dot.style.setProperty(
+      '--trail-opacity',
+      `${0.75 - progress * 0.6}`
+    );
+
+    dot.classList.add('is-hidden');
+
+    document.body.appendChild(dot);
+
+    trailElements.push(dot);
+
+    positions.push({
+      x: mouseX,
+      y: mouseY
+    });
+  }
+
+  // Capture cursor position.
+  document.addEventListener('pointermove', (event) => {
+    if (event.pointerType !== 'mouse') return;
+
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    visible = true;
+  });
+
+  // Hide when the cursor leaves the browser window.
+  document.addEventListener('pointerleave', () => {
+    visible = false;
+  });
+
+  document.addEventListener('pointerenter', () => {
+    visible = true;
+  });
+
+  // Smooth animation loop.
+  function animate() {
+    positions[0].x += (mouseX - positions[0].x) * 0.35;
+    positions[0].y += (mouseY - positions[0].y) * 0.35;
+
+    for (let i = 1; i < trailCount; i++) {
+      const previous = positions[i - 1];
+      const current = positions[i];
+
+      current.x += (previous.x - current.x) * 0.28;
+      current.y += (previous.y - current.y) * 0.28;
+    }
+
+    trailElements.forEach((dot, index) => {
+      const position = positions[index];
+
+      dot.style.transform =
+        `translate3d(${position.x}px, ${position.y}px, 0) translate(-50%, -50%)`;
+
+      dot.classList.toggle('is-hidden', !visible);
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  // Handle accessibility setting changes.
+  reducedMotion.addEventListener('change', (event) => {
+    trailElements.forEach((dot) => {
+      dot.style.display = event.matches ? 'none' : '';
+    });
+  });
+})();
