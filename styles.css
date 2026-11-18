@@ -237,3 +237,7 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
         font-size: 10px;
     }
 }
+
+.dashboard-loading[hidden] {
+  display: none;
+}
